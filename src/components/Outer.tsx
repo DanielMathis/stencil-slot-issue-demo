@@ -3,13 +3,15 @@ import { Component, h, Host } from "@stencil/core";
 @Component({ tag: "bug-outer", scoped: true })
 export class Outer {
   render() {
-    <Host>
-      <div class="outer">
-        <h2>Elements should be here</h2>
-        <div class="outer__inner">
-          <slot></slot>
+    return (
+      <Host>
+        <div class="outer">
+          <h2>Blue elements should below this line</h2>
+          <div class="outer__inner">
+            <slot></slot>
+          </div>
         </div>
-      </div>
-    </Host>;
+      </Host>
+    );
   }
 }

@@ -1,0 +1,16 @@
+{
+  "name": "stencil-issue",
+  "version": "1.0.0",
+  "description": "Reproduction project of a StencilJS issue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@stencil/core": "^4.35.1",
+    "rollup": "^4.44.0",
+    "typescript": "^5.8.3"
+  }
+}

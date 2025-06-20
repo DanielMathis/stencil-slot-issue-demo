@@ -2,7 +2,7 @@
   margin: 16px;
   display: grid;
   gap: 16px;
-  grid-template-columns: repeat(5, 250px);
+  grid-template-columns: repeat(20, 250px);
 }
 
 bug-outer {
@@ -33,16 +33,20 @@ bug-outer > .outer > .outer__inner {
   gap: 4px;
 }
 
-bug-inner > {
+bug-inner {
   display: block;
+  --bg: red;
 }
 
 bug-inner > .inner {
   color: white;
-  background-color: navy;
+  background-color: var(--bg);
   padding: 4px;
   border-radius: 4px;
   display: flex;
   justify-content: space-between;
 }
 
+bug-outer > .outer bug-inner {
+  --bg: navy;
+}
